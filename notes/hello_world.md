@@ -50,6 +50,8 @@ or `cargo new hello_world` to generate directory `hello_world` which will be aut
 `src/main.rs`: a hello world rust program
 
 `cargo build`: Command that tells cargo to build project. Builds a executable file in `target/debug/`.
+`cargo build --release` - builds with optimizations.
+
 `cargo run`: Run the generated executable. Can also run this file using `./target/debug/hello_world`.
 
 `cargo run`also knows when you changed file, where it will compile the files before running; otherwise just runs the previously generated executable.
@@ -57,3 +59,9 @@ or `cargo new hello_world` to generate directory `hello_world` which will be aut
 `Cargo.lock`: This is a lock file similar to `yarn.lock`. This file keeps track of the exact versions of dependencies in your project. Cargo manages its contents for you.
 
 `cargo check`: This command quickly checks your code to make sure it compiles but doesn’t produce an executable
+
+In summary:
+
+We can build a project using `cargo build` or `cargo check`.
+We can build and run a project in one step using `cargo run`.
+Instead of saving the result of the build in the same directory as our code, Cargo stores it in the `target/debug` directory.
